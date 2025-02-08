@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- #region head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Page tab title -->
+    <title>Daniel Stoneley : Portfolio</title>
+</head>
+<!-- #endregion -->
+
+<body class="background">
+    <!-- #region scripts -->
+    <script type="text/javascript" src="bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <!-- #endregion scripts -->
+
+    <!-- #region title section -->
+    <div class="d-flex flex-column vh-100">
+        <img class="title-image vh-100"
+            src="images/third-party/destruction-allstars/destruction-allstars-wallpaper-01.jpg">
+
+        <div class="d-flex flex-row position-absolute top-0 w-100">
+            <div class="d-flex flex-column">
+                <div class="title-name-top d-md-none">DANIEL</div>
+                <div class="title-name-bottom d-md-none">STONELEY</div>
+                <div class="title-name-top d-none d-md-block">DANIEL STONELEY</div>
+                <div class="title-jobrole">Technical Director</div>
+            </div>
+
+            <ul class="nav justify-content-end position-absolute top-0 end-0 w-50 flex-column flex-md-row">
+                <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="d-flex flex-row position-absolute bottom-0 w-100">
+            <div class="d-flex flex-column w-100">
+                <div class="title-tagline text-center d-md-none">Vehicles and</div>
+                <div class="title-tagline text-center d-md-none">Destruction</div>
+                <div class="title-tagline text-center d-none d-md-block">Vehicles and Destruction</div>
+                <div class="title-tagline-sub text-center">creating industry leading technology</div>
+                <div class="title-tagline-graffiti text-center">...and then breaking it</div>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion title section -->
+
+    <!-- #region personal blurb section -->
+    <div id="about" class="speech-bubble-title">Who's this handsome man?</div>
+
+    <div class="container speech-bubble">
+        <div class="row">
+            <div class="col-12 col-md-auto align-self-center">
+                <div class="row">
+                    <div class="col d-md-none"></div>
+                    <div class="col">
+                        <img class="speech-bubble-portrait" src="images/portraits/portrait-01.png">
+                    </div>
+                    <div class="col d-md-none"></div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="d-flex h-100 align-items-center">
+                    <div>
+                        <p class="speech-bubble-text">
+                            “I'm Dan, a technical director with over 20 years of experience in the
+                            games industry. I've developed vehicle dynamics and destruction physics
+                            technologies for the biggest industry names, including Sony and Activision, and my work has
+                            played pivotal roles in the success of criticaly acclaimed franchises such as Formula One
+                            and Motorstorm.
+                        </p>
+                        <p class="speech-bubble-text">
+                            I've also been part of an amazing journey, helping a tiny independant studio to succeed and grow into a large 250+
+                            staff company. I've provided consultation and bespoke technology creation services to an
+                            array of hi-profile clients and I now direct a team in the development of a
+                            vehicle and destruction middleware which supports multiple projects and studios.”
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion personal blurb section -->
+
+    <!-- #regin portforlio bento -->
+    <div id="portfolio" class="container">
+        <div class="speech-bubble-title">Portfolio highlights</div>
+
+        <div class="bento-grid">
+            <div class="bento-item bento-2x2">
+                <img src="images/third-party/destruction-allstars/destruction-allstars-wallpaper-04.jpg">
+                <p>Destruction Allstars</p>
+            </div>
+            <div class="bento-item bento-2x1">
+                <img src="images/third-party/motorstorm/motorstorm-pacific-rift.jpg">
+                <p>Motorstorm</p>
+            </div>
+            <div class="bento-item bento-2x1">
+                <img src="images/third-party/formula-one/formula-one-2006.jpg">
+                <p>Formula One</p>
+            </div>
+            <div class="bento-item bento-2x1">
+                <img src="images/third-party/blur/blur.jpg">
+                <p>Blur</p>
+            </div>
+            <div class="bento-item">
+                <img src="images/third-party/switchblade/switchblade.jpg">
+                <p>Switchblade</p>
+            </div>
+            <div class="bento-item">
+                <img src="images/third-party/geometry-wars/geometry-wars-3.jpg">
+                <p>Geometry Wars</p>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion portfolio bento -->
+
+    <!-- #region skill cards section -->
+    <div id="skills" class="container">
+        <div class="row">
+            <div class="speech-bubble-title">Core skills</div>
+
+            <div class="col-12 col-lg-4 d-flex align-items-stretch">
+                <div class="card skillcard">
+                    <img src="images/third-party/destruction-allstars/destruction-allstars-card-01.png" class="card-img-top skillcard-img">
+                    <div class="card-body skillcard-body d-flex flex-column">
+                        <h5 class="card-title skillcard-title">Physics</h5>
+                        <p class="card-text skillcard-text">
+                            Throughout my career, I've scratch built physics engines for Acclaim, Sony, and Lucid. One
+                            focussed on simulating large
+                            quantities of debris and ragdolls for an indoor shooting game. Another was multi-platform and scalable, suppoting the Formula One franchise across
+                            a range of differently specced devices. The latest is specialised for simulating high-fidelity vehicle
+                            dynamics running asyncronously alongside the Unreal Engine on modern hardware.
+                        </p>
+                        <p class="card-text skillcard-text">
+                            I've also shipped games using PhysX, Havok, and Bullet physics engines. As part of my work
+                            on
+                            Motorstorm Pacific Rift, I collaborated with the Havok developers to upgrade and port Havok
+                            features to the PS3 SPU architecture. On Destruction All Stars, I made significant
+                            modifications
+                            and additions to both PhysX and the Unreal Engine to upgrade them with soft-body physics
+                            deformation features.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 d-flex align-items-stretch">
+                <div class="card skillcard">
+                    <img src="images/third-party/destruction-allstars/destruction-allstars-card-02.png" class="card-img-top skillcard-img">
+                    <div class="card-body skillcard-body d-flex flex-column">
+                        <h5 class="card-title skillcard-title">Vehicle Dynamics</h5>
+                        <p class="card-text skillcard-text">
+                            Combining a deep understanding of vehicle mechanics, an obssession
+                            for racing gaming, and a lifelong passion for motorsport, I provide a complete vehicle development package.  On many projects, I've not only programmed the vehicle
+                            simulations, but also tuned the car gameplay, assisted in the game’s design, and collaborated with vehicle artists and environment builders.  I've built experience for all aspects of integrating vehicle gameplay and directing and supporting other disciplines effectively.
+                        </p>
+                        <p class="card-text skillcard-text">
+                            I've developed a wide array of vehicle types, everything from cars, tanks, and monster
+                            trucks to flying craft. I've also created a broad spectrum of vehicle gameplay experiences
+                            such as arcade street racers, car combat games, and even a
+                            vehicle MOBA.  My current passion project is the development of a next-generation simulation racing model to rival and surpass the likes of Gran Turismo and Asseto Corsa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 d-flex align-items-stretch">
+                <div class="card skillcard">
+                    <img src="images/third-party/destruction-allstars/destruction-allstars-card-03.png" class="card-img-top skillcard-img">
+                    <div class="card-body skillcard-body d-flex flex-column">
+                        <h5 class="card-title skillcard-title">Destruction</h5>
+                        <p class="card-text skillcard-text">
+                            Who doesn't love smashing their Lego after building it? Destruction is a complex problem requiring the coordination of varied technical approaches and
+                            disciplines. There are many tricks to selling the illusion, and a
+                            multitude of pitfalls to avoid. Fortunately, I've had many opportunities to smash Lego
+                            during my career and I've built a large toolbox of destruction solutions and techniques, an
+                            intuition for navigating the problem, and experience in directing disciplines to acheive
+                            high quality results.
+                        </p>
+                        <p class="card-text skillcard-text">
+                            Across various titles, I’ve implemented and coordinated solutions such as panel hinging and
+                            detachment systems, scratch layers, mesh morphing, skeletal manipulation, mass debris systems,
+                            soft-body physics deformation, vehicle crash and roll dynamics, building collapse, glass smashing, explosions, and much
+                            more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion skill cards section -->
+
+    <!-- #region contact section -->
+    <div id="contact" class="speech-bubble-title">You can COUNT on me</div>
+
+    <div class="container speech-bubble">
+        <div class="row">
+            <div class="col-auto">
+                <img class="speech-bubble-portrait" src="images/portraits/portrait-02.png">
+            </div>
+            <div class="col align-self-center">
+                <div class = "row">
+                    <div class="col-3"><p class="contact-label">email</p></div>
+                    <div class="col"><p class="contact-text">dan.andres.stoneley@gmail.com</p></div>
+                </div>
+                <div class = "row">
+                    <div class="col-3"><p class="contact-label">LinkedIn</p></div>
+                    <div class="col"><p class="contact-text">www.linkedin.com/in/daniel-stoneley</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion contact section -->
+</body>
+
+</html>

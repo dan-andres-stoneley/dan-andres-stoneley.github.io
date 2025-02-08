@@ -1,0 +1,296 @@
+/* Debug */
+/* Add this class to highlight a div in pink.  Useful for debugging layout issues */
+.debug {
+    background-color: rgba(208, 50, 139, 0.5);
+    border: 1px solid rgba(255, 0, 119, 0.5);
+}
+
+
+/* Global */
+:root {
+    /* maximum allowed width for div elements */
+    --max-width: 2000px;
+
+    /* Colour scheme for this website */
+    --color-black: #020203;
+    --color-darkgrey: #22242f;
+    --color-midgrey: #292b3b;
+    --color-lightgrey: #6272a4;
+    --color-white: #f8f8f2;
+    --color-cyan: #8be9fd;
+    --color-green: #50fa7b;
+    --color-orange: #ffb88c;
+    --color-pink: #ff79c6;
+    --color-purple: #bd93f9;
+    --color-red: #ff5555;
+    --color-yellow: #f1fa8c;
+}
+
+
+.div {
+    max-width: var(--max-width);
+}
+
+
+/* Fonts */
+@font-face {
+    font-family: Title;
+    src: url('fonts/ScratchedLetters.ttf');
+}
+
+@font-face {
+    font-family: Graffiti;
+    src: url('fonts/PermanentMarker.ttf');
+}
+
+@font-face {
+    font-family: Standard;
+    src: url('fonts/Monaco.ttf');
+}
+
+
+/* Background */
+.background {
+    background-color:#020203; 
+    background: linear-gradient(to bottom right, #08080c, #1b1d25), url('images/backgrounds/tyre-background.png');
+    background-position: left top;
+    background-repeat: repeat;
+    background-blend-mode: multiply; 
+  }
+
+
+/* Title section */
+.title-image {
+    object-fit: cover;
+    filter: brightness(30%);
+}
+
+.title-name-top {
+    font-family: Title;
+    font-size: 60px;
+    color: var(--color-white);
+    line-height: 80%;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.title-name-bottom {
+    font-family: Title;
+    font-size: 60px;
+    color: var(--color-white);
+    line-height: 80%;
+    padding-left: 10px;
+}
+
+.title-jobrole {
+    font-family: Title;
+    font-size: 20px;
+    color: var(--color-white);
+    line-height: 80%;
+    padding-left: 10px;
+}
+
+.title-tagline {
+    font-family: Title;
+    font-size: 60px;
+    color: var(--color-white);
+    line-height: 80%;
+}
+
+.title-tagline-sub {
+    font-family: Title;
+    font-size: 20px;
+    color: var(--color-white);
+    line-height: 80%;
+}
+
+.title-tagline-graffiti {
+    font-family: Graffiti;
+    font-size: 20px;
+    color: var(--color-red);
+    line-height: 100%;
+    padding-bottom: 20px;
+}
+
+.nav-link {
+    font-family: Standard;
+    font-size: 14px;
+    color: var(--color-white);
+    padding-top: 15px;
+    text-align: right;
+}
+
+.nav-link:hover {
+    color: var(--color-red);
+}
+
+.nav-item a:focus {
+    color: var(--color-white);
+}
+
+
+/* Speech bubbles */
+.speech-bubble {
+    background-color: var(--color-darkgrey);
+    background: linear-gradient(to bottom right, var(--color-darkgrey), var(--color-midgrey));
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px var(--color-black);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.speech-bubble-title {
+    font-family: Graffiti;
+    font-size: 6vw;
+    color: var(--color-red);
+    text-align: center;
+    text-shadow: 5px 5px 10px var(--color-black);
+}
+
+.speech-bubble-text {
+    font-family: Standard;
+    font-size: 16px;
+    color: var(--color-yellow);
+}
+
+.speech-bubble-portrait {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* Portfolio bento */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    padding: 15px;
+}
+
+.bento-item {
+    background-color: var(--color-black);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--color-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.bento-item:hover {
+    transform: scale(1.03);
+}
+
+.bento-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bento-item p {
+    position: absolute;
+    font-family: Title;
+    font-size: 32px;
+    color: var(--color-white);
+    text-shadow: 2px 2px var(--color-black);
+}
+
+.bento-2x2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.bento-2x1 {
+    grid-column: span 2;
+}
+
+
+/* Skill cards */
+.skillcard {
+    border-color: var(--color-green);
+    margin-bottom: 6px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--color-black);
+}
+
+.skillcard-img {
+    border-radius: 10px 10px 0px 0px;
+    filter: brightness(80%);
+    filter: saturate(80%);
+}
+
+.skillcard-body {
+    background-color: var(--color-darkgrey);
+    background: linear-gradient(to bottom right, var(--color-darkgrey), var(--color-midgrey));
+    color: var(--color-green);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.skillcard-title {
+    font-family: Title;
+    font-size: 30px;
+}
+
+.skillcard-text {
+    font-family: Standard;
+    font-size: 14px;
+}
+
+
+/* Contact */
+.contact-label {
+    font-family: Title;
+    font-size: 60px;
+    color: var(--color-white);
+    line-height: 80%;
+}
+
+.contact-text {
+    font-family: Standard;
+    font-size: 20px;
+    color: var(--color-white);
+}
+
+
+/* Bootstrap breakpoint sizing rules */
+/* sm */
+@media (min-width: 576px) {
+    .speech-bubble-title {
+        font-size: 35px;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .speech-bubble-title {
+        font-size: 48px;
+    }
+}
+
+/* lg */
+@media (min-width: 992px) {
+    .speech-bubble-title {
+        font-size: 65px;
+    }
+
+    .bento-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+    .speech-bubble-title {
+        font-size: 80px;
+    }
+}
+
+/* xxl */
+@media (min-width: 1400px) {
+    .speech-bubble-title {
+        font-size: 92px;
+    }
+}
